@@ -1,0 +1,29 @@
+# robots.txt for https://dh.zywe.de
+# Rate limit for specific crawlers, otherwise open for general indexing.
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: DotBot
+Crawl-delay: 10
+
+User-agent: BLEXBot
+Crawl-delay: 10
+
+# Default rules for all other crawlers (and paths for rate-limited crawlers)
+User-agent: *
+Allow: /
+Allow: /icons/
+Allow: /images/
+Disallow: /xw_assets/
+Disallow: /node_modules/
+Disallow: /*?*
+Disallow: /~partytown/
+# No Crawl-delay for general crawlers.
+# 网站地图：指向 Astro 生成的索引文件
+Sitemap: https://dh.zywe.de/sitemap-index.xml
